@@ -1,0 +1,9 @@
+name: ItemClickLimit
+main: com.Daniel.ItemClickLimit.Main.Main
+version: 3.5
+depend: [WorldGuard]
+
+commands:
+  itemclicklimit:
+    permission: itemclicklimit.reload
+    permission-message: §b§l[ §f§lServer §b§l] §c권한이 없습니다.

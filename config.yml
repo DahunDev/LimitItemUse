@@ -1,0 +1,116 @@
+#아이템 우클릭이 제한되는 지역 및 아이템 목록
+MineCart-msg:
+- "&b&l[ &f&lServer &b&l] &c해당 월드에서는 상자/깔때기/화로가 실린 광산 수레 아이템 드롭이 비활성화되어 있습니다."
+
+Deny-Msg-inv:
+- "&b&l[ &f&lServer &b&l] &c해당 지역에서는 해당 아이템의 우클릭 및 사용이 불가능합니다."
+
+Deny-Msg-interact:
+- "&b&l[ &f&lServer &b&l] &c해당 지역에서는 클릭 하신 해당 엔티티/블럭은 사용이 불가능합니다." 
+
+Deny-use-Msg-All-Region:
+- "&b&l[ &f&lServer &b&l] &c해당 아이템은 우클릭 및 사용이 불가능합니다."
+
+
+Deny-interact-Msg-All-Region:
+- "&b&l[ &f&lServer &b&l] &c클릭 하신 해당 엔티티/블럭은 사용이 불가능합니다."
+
+
+
+Deny_Msg_Item_dispensor:
+- "&b&l[ &f&lServer &b&l] &c해당 지역에서는 해당 아이템을 발사기에 사용이 불가능합니다."
+Deny_Msg_Item_dispensor_All-Region:
+- "&b&l[ &f&lServer &b&l] &c해당 아이템은 발사기에 사용이 불가능합니다."
+
+
+block-using-item-dispensor-for_OP: true
+block-using-item-for_OP: true
+block-interact-for_OP: false
+MSG-on-deny-click-inv: false
+MSG-on-deny-interact: true
+MSG-on-deny-dispensor-inv: true
+
+
+All-Region-use:
+- "HOPPER_MINECART"
+All-Region-interact:
+- "HOPPER_MINECART"
+
+
+
+
+
+All-Region-dispensor:
+- "HOPPER_MINECART"
+
+
+
+world-dispensor:
+  world:
+    __global__:
+    - "HOPPER_MINECART"
+    example:
+    - "MATERIAL"
+  
+  exampleworld:
+    __global__:
+    - "HOPPER_MINECART"
+    example:
+    - "MATERIAL"
+    
+   
+
+
+world-use:
+  world:
+    __global__:
+    - "BOW"
+    - "ARROW"
+    example:
+    - "MATERIAL"
+  
+  exampleworld:
+    __global__:
+    - "BOW"
+    - "ARROW"
+    example:
+    - "MATERIAL"
+  
+world-interact-target:
+  world:
+    __global__:
+    - "MINECART_CHEST"
+    - "MINECART_FURNACE"
+
+  wild:
+    __global__:
+    - "MINECART_CHEST"
+    - "MINECART_FURNACE"
+
+  developWorld:
+    __global__:
+    - "MINECART_CHEST"
+    - "MINECART_FURNACE"
+  
+ 
+Disabled-MineCart_ItemDrop-worlds:
+  - "world"
+  - "wild"
+  - "developWorld"
+ 
+ 
+Ban-ArmorStand-Place: true
+ArmorStandMSG: "&b&l[ &f&lServer &b&l] &c갑옷 거치대는 설치 및 우클릭이 불가능합니다."
+bypassBanArmorstandPerm: "ItemClickLimit.bypass.ArmorStand"
+ArmorStand: ARMOR_STAND
+
+Ban-ItemFrame-Place: true
+ItemFrameStandMSG: "&b&l[ &f&lServer &b&l] &c아이템 액자는 설치가 불가능합니다."
+bypassBanItemFramePerm: "ItemClickLimit.bypass.ItemFrame"
+ItemFrame: ITEM_FRAME
+
+
+Ban-Painting-Place: true
+PaintingMSG: "&b&l[ &f&lServer &b&l] &c갑옷 거치대는 설치가 불가능합니다."
+bypassBanPaintingPerm: "ItemClickLimit.bypass.Painting"
+Painting: PAINTING
